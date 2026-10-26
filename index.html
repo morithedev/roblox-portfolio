@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#F1F0EA">
+    <meta name="description" content="Decro builds Roblox gameplay and backend systems in Luau, including combat, inventory, ragdoll and player data.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Decro">
+    <meta property="og:title" content="Decro - Roblox Developer">
+    <meta property="og:description" content="Roblox gameplay and backend systems in Luau.">
+    <title>Decro - Roblox Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="preload" href="assets/fonts/plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/plex-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/posters/combat-960.avif" as="image" type="image/avif" imagesrcset="assets/posters/combat-640.avif 640w, assets/posters/combat-960.avif 960w, assets/posters/combat-1440.avif 1440w, assets/posters/combat-1920.avif 1920w" imagesizes="(max-width: 767px) 100vw, (max-width: 1400px) 50vw, 700px" fetchpriority="high">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/main.css?v=202610266">
+    <link rel="stylesheet" href="styles/motion.css?v=202610265">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Decro, home">
+          <span class="brand-name">Decro</span>
+          <span class="brand-role">Roblox developer</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#projects">Work</a>
+          <a href="#about">Expertise</a>
+          <a href="#studios">Collaboration</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="header-contact" href="#contact">Start a conversation</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy" data-motion="hero-copy">
+          <p class="eyebrow">Available for commissions and team roles</p>
+          <h1 id="hero-title">I'm <span>Decro</span></h1>
+          <p class="hero-role">Roblox gameplay and backend scripting</p>
+          <p class="hero-summary">I build combat systems, inventory, player data and other gameplay features in Luau.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects" data-motion-control>View selected work
+              <svg viewBox="0 0 20 20" aria-hidden="true" data-motion-arrow><path d="M4 10h11M10 5l5 5-5 5"/></svg>
+            </a>
+            <a class="text-link" href="#contact">Discuss a project</a>
+          </div>
+          <p class="hero-note">Independent scripter · Luau · Remote</p>
+        </div>
+        <a class="hero-visual" href="#work-combat" aria-label="View the combat system project" data-motion="hero-visual">
+          <picture>
+            <source type="image/avif" srcset="assets/posters/combat-640.avif 640w, assets/posters/combat-960.avif 960w, assets/posters/combat-1440.avif 1440w, assets/posters/combat-1920.avif 1920w" sizes="(max-width: 767px) 100vw, (max-width: 1400px) 50vw, 700px">
+            <img src="assets/posters/combat.jpg" srcset="assets/posters/combat.jpg 1920w" sizes="(max-width: 767px) 100vw, (max-width: 1400px) 50vw, 700px" alt="Combat dummy scene in Roblox Studio" width="1920" height="1080" fetchpriority="high">
+          </picture>
+          <span class="hero-visual-label"><span>Featured system</span><strong>Combat</strong></span>
+          <span class="hero-visual-index" aria-hidden="true">01 / 05</span>
+        </a>
+      </section>
+
+      <section class="work section-wrap" id="projects" aria-labelledby="work-title">
+        <div class="section-heading" data-motion="section">
+          <p class="eyebrow">Selected work <span>01-05</span></p>
+          <h2 id="work-title">Gameplay systems and studio tools.</h2>
+          <p>Gameplay examples, with source available to inspect.</p>
+        </div>
+
+        <div class="work-grid" data-motion-stagger>
+          <article class="work-card work-card-feature" id="work-combat" aria-labelledby="combat-title" data-motion="section-item">
+            <div class="work-media">
+              <picture>
+                <source type="image/avif" srcset="assets/posters/combat-640.avif 640w, assets/posters/combat-960.avif 960w, assets/posters/combat-1440.avif 1440w, assets/posters/combat-1920.avif 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 50vw, 700px">
+                <img class="project-poster" src="assets/posters/combat.jpg" srcset="assets/posters/combat.jpg 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 50vw, 700px" alt="Combat training dummies in Roblox Studio" width="1920" height="1080" loading="lazy">
+              </picture>
+            </div>
+            <div class="work-content">
+              <p class="work-kicker">01 / Combat</p>
+              <h3 id="combat-title">Simple combat system</h3>
+              <p>Close-range M1 and M2 combos, blocks, sprint attacks and knockback. Damage, targets and cooldowns are handled by the server.</p>
+              <ul class="tag-list" aria-label="Combat system features">
+                <li>Server-side checks</li>
+                <li>Training dummies</li>
+                <li>Attack states</li>
+              </ul>
+              <p class="code-launch-status" data-code-launch-status role="status" aria-live="polite" hidden></p>
+              <div class="work-actions">
+                <button class="button button-dark" type="button" data-project="m1" aria-label="View code: Combat system">View code</button>
+                <a class="text-link" href="https://streamable.com/am2ffg" target="_blank" rel="noopener noreferrer">Open demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" id="work-inventory" aria-labelledby="inventory-title" data-motion="section-item">
+            <div class="work-media">
+              <picture>
+                <source type="image/avif" srcset="assets/posters/inventory-640.avif 640w, assets/posters/inventory-960.avif 960w, assets/posters/inventory-1440.avif 1440w, assets/posters/inventory-1920.avif 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 47vw, 640px">
+                <img class="project-poster" src="assets/posters/inventory.jpg" srcset="assets/posters/inventory.jpg 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 47vw, 640px" alt="Inventory slots and interaction prompt in Roblox Studio" width="1920" height="1080" loading="lazy">
+              </picture>
+            </div>
+            <div class="work-content">
+              <p class="work-kicker">02 / Inventory</p>
+              <h3 id="inventory-title">Inventory and item prompts</h3>
+              <p>Pick up tagged items, equip them from three slots and drop them back into the world. The server checks the item, distance, ownership and available space.</p>
+              <ul class="tag-list" aria-label="Inventory system features">
+                <li>Three item slots</li>
+                <li>Server validation</li>
+                <li>World pickups</li>
+              </ul>
+              <p class="code-launch-status" data-code-launch-status role="status" aria-live="polite" hidden></p>
+              <div class="work-actions">
+                <button class="button button-dark" type="button" data-project="inventory" aria-label="View code: Inventory">View code</button>
+                <a class="text-link" href="https://streamable.com/pwv6n3" target="_blank" rel="noopener noreferrer">Open demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" id="work-drag" aria-labelledby="drag-title" data-motion="section-item">
+            <div class="work-media">
+              <picture>
+                <source type="image/avif" srcset="assets/posters/drag-throw-640.avif 640w, assets/posters/drag-throw-960.avif 960w, assets/posters/drag-throw-1440.avif 1440w, assets/posters/drag-throw-1920.avif 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 47vw, 640px">
+                <img class="project-poster" src="assets/posters/drag-throw.jpg" srcset="assets/posters/drag-throw.jpg 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 47vw, 640px" alt="Physics object pickup and throw in Roblox Studio" width="1920" height="1080" loading="lazy">
+              </picture>
+            </div>
+            <div class="work-content">
+              <p class="work-kicker">03 / Physics</p>
+              <h3 id="drag-title">Drag, weight and throw</h3>
+              <p>Pick up, carry and throw physics objects. Each object can use its own weight, throw force and interaction range, with server checks before an item moves.</p>
+              <ul class="tag-list" aria-label="Physics system features">
+                <li>Object weight</li>
+                <li>Throw force</li>
+                <li>Interaction range</li>
+              </ul>
+              <p class="code-launch-status" data-code-launch-status role="status" aria-live="polite" hidden></p>
+              <div class="work-actions">
+                <button class="button button-dark" type="button" data-project="drag-throw" aria-label="View code: Drag, weight and throw">View code</button>
+                <a class="text-link" href="https://streamable.com/biu8tm" target="_blank" rel="noopener noreferrer">Open demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" id="work-ragdoll" aria-labelledby="ragdoll-title" data-motion="section-item">
+            <div class="work-media">
+              <picture>
+                <source type="image/avif" srcset="assets/posters/ragdoll-640.avif 640w, assets/posters/ragdoll-960.avif 960w, assets/posters/ragdoll-1440.avif 1440w, assets/posters/ragdoll-1920.avif 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 47vw, 640px">
+                <img class="project-poster" src="assets/posters/ragdoll.jpg" srcset="assets/posters/ragdoll.jpg 1920w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 47vw, 640px" alt="R6 and R15 ragdoll system in Roblox Studio" width="1920" height="1080" loading="lazy">
+              </picture>
+            </div>
+            <div class="work-content">
+              <p class="work-kicker">04 / Character systems</p>
+              <h3 id="ragdoll-title">R6 and R15 ragdoll</h3>
+              <p>Toggle ragdoll for both character rigs, keep the camera with the character and leave death ragdolls in the world. Server state and request limits support multiplayer play.</p>
+              <ul class="tag-list" aria-label="Ragdoll system features">
+                <li>R6 and R15</li>
+                <li>Camera follow</li>
+                <li>Request limits</li>
+              </ul>
+              <p class="code-launch-status" data-code-launch-status role="status" aria-live="polite" hidden></p>
+              <div class="work-actions">
+                <button class="button button-dark" type="button" data-project="ragdoll" aria-label="View code: Ragdoll system">View code</button>
+                <a class="text-link" href="https://streamable.com/axzau0" target="_blank" rel="noopener noreferrer">Open demo</a>
+                <a class="text-link" href="https://www.roblox.com/games/14434670478/Ragdoll" target="_blank" rel="noopener noreferrer">Play on Roblox</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" id="work-tink" aria-labelledby="tink-title" data-motion="section-item">
+            <div class="framework-visual" aria-hidden="true">
+              <svg viewBox="0 0 620 260" role="presentation">
+                <path class="framework-line" d="M132 130h110m136 0h110M310 130v-66m0 132v-24"/>
+                <rect class="framework-node" x="24" y="92" width="108" height="76" rx="3"/>
+                <rect class="framework-node framework-node-focus" x="242" y="92" width="136" height="76" rx="3"/>
+                <rect class="framework-node" x="488" y="92" width="108" height="76" rx="3"/>
+                <rect class="framework-chip" x="256" y="20" width="108" height="44" rx="3"/>
+                <rect class="framework-chip" x="272" y="194" width="76" height="42" rx="3"/>
+                <text x="78" y="137">Client</text>
+                <text x="310" y="137">Tink</text>
+                <text x="542" y="137">Server</text>
+                <text class="framework-label" x="310" y="47">Controllers</text>
+                <text class="framework-label" x="310" y="220">Services</text>
+                <circle class="framework-dot" cx="188" cy="130" r="4"/>
+                <circle class="framework-dot" cx="432" cy="130" r="4"/>
+              </svg>
+            </div>
+            <div class="work-content">
+              <p class="work-kicker">05 / Framework</p>
+              <h3 id="tink-title">Tink game framework</h3>
+              <p>A typed, Knit-style framework for Roblox services and controllers. It uses Spark modules for remotes and module discovery, with staged startup and Promise-based hooks.</p>
+              <ul class="tag-list" aria-label="Tink framework features">
+                <li>Remote signals</li>
+                <li>Rate limiting</li>
+                <li>Staged startup</li>
+              </ul>
+              <p class="code-launch-status" data-code-launch-status role="status" aria-live="polite" hidden></p>
+              <div class="work-actions">
+                <button class="button button-dark" type="button" data-project="tink" aria-label="View code: Tink framework">View code</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="expertise section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-heading section-heading-compact" data-motion="section">
+          <p class="eyebrow">Expertise</p>
+          <h2 id="about-title">Gameplay, player data, and interface systems.</h2>
+          <p>I'm Decro, a Roblox scripter with 3+ years of experience building modular gameplay and backend systems.</p>
+        </div>
+        <div class="expertise-grid" data-motion-stagger>
+          <article class="expertise-item" data-motion="section-item">
+            <span class="item-index">01</span>
+            <h3>Gameplay</h3>
+            <p>Combat, abilities, ragdolls, pickups, NPCs and round-based modes.</p>
+          </article>
+          <article class="expertise-item" data-motion="section-item">
+            <span class="item-index">02</span>
+            <h3>Player data</h3>
+            <p>DataStore, profiles, currency, inventory and saving systems.</p>
+          </article>
+          <article class="expertise-item" data-motion="section-item">
+            <span class="item-index">03</span>
+            <h3>Interface</h3>
+            <p>HUD, menus, settings, interaction prompts and connected game UI.</p>
+          </article>
+        </div>
+        <div class="studio-list" id="studios" data-motion-stagger>
+          <div class="studio-list-heading" data-motion="section">
+            <p class="eyebrow">Collaboration</p>
+            <h3>Selected teams</h3>
+          </div>
+          <a class="studio-row" href="https://www.roblox.com/communities/35271588/PHAZMAS#!/about" target="_blank" rel="noopener noreferrer" data-motion="section-item" data-motion-control>
+            <img src="assets/phazmas.webp" alt="" width="48" height="48" loading="lazy">
+            <div class="studio-identity">
+              <span class="studio-name">PHAZMAS</span>
+              <span class="studio-role">Scripter</span>
+            </div>
+            <dl class="studio-stats">
+              <div><dt>Members</dt><dd>98,041</dd></div>
+              <div><dt>Public visits</dt><dd>4,263,629</dd></div>
+            </dl>
+            <span class="studio-open">View group
+              <svg viewBox="0 0 20 20" aria-hidden="true" data-motion-arrow><path d="M6 14 14 6M7 6h7v7"/></svg>
+            </span>
+          </a>
+          <a class="studio-row" href="https://www.roblox.com/communities/685069423/Tidyverse#!/about" target="_blank" rel="noopener noreferrer" data-motion="section-item" data-motion-control>
+            <img src="assets/tidyverse.webp" alt="" width="48" height="48" loading="lazy">
+            <div class="studio-identity">
+              <span class="studio-name">Tidyverse</span>
+              <span class="studio-role">Scripter</span>
+            </div>
+            <dl class="studio-stats">
+              <div><dt>Members</dt><dd>463,435</dd></div>
+              <div><dt>Public visits</dt><dd>62,454,801</dd></div>
+            </dl>
+            <span class="studio-open">View group
+              <svg viewBox="0 0 20 20" aria-hidden="true" data-motion-arrow><path d="M6 14 14 6M7 6h7v7"/></svg>
+            </span>
+          </a>
+          <p class="studio-stats-note">Group members and combined visits across public group experiences, checked 26 October 2026. These are team totals, not Decro's personal project results.</p>
+        </div>
+      </section>
+
+      <section class="terms section-wrap" id="scope" aria-labelledby="terms-title">
+        <div class="section-heading section-heading-compact" data-motion="section">
+          <p class="eyebrow">How I work</p>
+          <h2 id="terms-title">A clear scope before the build.</h2>
+          <p>We agree on the system, deliverables and milestones before work starts.</p>
+        </div>
+        <div class="terms-grid">
+          <div class="terms-column">
+            <h3>Project scope</h3>
+            <ul class="plain-list">
+              <li>Combat, hitboxes, abilities and parries</li>
+              <li>Shops, inventory, crafting and trading</li>
+              <li>Player data, profiles and saving</li>
+              <li>NPCs, quests and daily rewards</li>
+              <li>HUD, menus and settings</li>
+              <li>Tools, pickups and interactables</li>
+              <li>Mini-games, bosses and round-based modes</li>
+              <li>Pets, mounts, leaderboards and kill feeds</li>
+            </ul>
+          </div>
+          <div class="terms-column">
+            <h3>Project structure</h3>
+            <ul class="plain-list">
+              <li>Larger builds are divided into milestones</li>
+              <li>Animation and art are scoped as separate deliverables</li>
+              <li>Multi-system work is grouped into defined features</li>
+              <li>Vehicle systems are scoped as dedicated work</li>
+              <li>Open-ended builds are defined around clear deliverables</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="payment-block" id="payment">
+          <div class="payment-intro">
+            <p class="eyebrow">Payment and delivery</p>
+            <h3>Scope, payment, and ownership.</h3>
+            <p>Most commissions are paid per task after delivery. A 50/50 split also works: half before I start and half on delivery. I accept Robux, Mastercard transfers, gift cards and crypto. I don't take revenue share or payment after a game ships.</p>
+          </div>
+          <div class="payment-details">
+            <div>
+              <h4>Ownership</h4>
+              <p>Once a task is paid for, that code is yours. You can modify and ship it anywhere. I don't keep a copy.</p>
+            </div>
+            <div>
+              <h4>Refunds</h4>
+              <p>You can stop at any time. With per-task work, you only pay for what has been delivered. With 50/50, the upfront half is refundable until I start.</p>
+            </div>
+            <div>
+              <h4>Availability</h4>
+              <p>I'm available 6-12 hours a day (UTC+3). I reply within hours on Discord.</p>
+            </div>
+            <div>
+              <h4>Robux payments</h4>
+              <p>The project amount is based on the current DevEx rate. You cover Roblox's 30% marketplace fee. Payment can be sent through a game pass or group funds. <a href="https://create.roblox.com/docs/production/monetization/developer-exchange" target="_blank" rel="noopener noreferrer">See current DevEx terms</a>.</p>
+            </div>
+            <div class="payment-username">
+              <h4>Roblox username</h4>
+              <p>zdecro</p>
+            </div>
+            <div>
+              <h4>Card transfers</h4>
+              <p>Direct transfers to Mastercard are accepted.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy" data-motion="section">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Discuss your project.</h2>
+          <p>Tell me about the role or system you have in mind, the scope and your preferred timeline.</p>
+        </div>
+        <div class="contact-action">
+          <p class="contact-label">Discord username</p>
+          <div class="discord-line">
+            <span class="discord-name" data-discord-username>wokeupinflorida</span>
+            <button class="copy-button" type="button" data-copy-discord hidden>Copy
+              <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7" y="6" width="9" height="11" rx="1"/><path d="M13 6V4H5v10h2"/></svg>
+            </button>
+          </div>
+          <p class="copy-status" data-copy-status role="status" aria-live="polite"></p>
+          <div class="contact-links">
+            <a href="https://github.com/morithedev" target="_blank" rel="noopener noreferrer" data-motion-control>GitHub
+              <svg viewBox="0 0 20 20" aria-hidden="true" data-motion-arrow><path d="M6 14 14 6M7 6h7v7"/></svg>
+            </a>
+            <a href="https://www.roblox.com/users/2669200504/profile" target="_blank" rel="noopener noreferrer" data-motion-control>Roblox profile
+              <svg viewBox="0 0 20 20" aria-hidden="true" data-motion-arrow><path d="M6 14 14 6M7 6h7v7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="#top">Decro</a>
+      <span>Roblox gameplay and backend scripting</span>
+      <span>2026</span>
+    </footer>
+
+    <dialog class="code-dialog" aria-labelledby="code-title" data-code-dialog>
+      <div class="dialog-shell">
+        <header class="dialog-header">
+          <div class="dialog-title-wrap">
+            <p class="eyebrow">Project source</p>
+            <h2 id="code-title" data-code-title>Code preview</h2>
+          </div>
+          <button class="dialog-close" type="button" data-dialog-close aria-label="Close code preview">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        </header>
+        <div class="dialog-controls">
+          <label for="code-file-select">Source file</label>
+          <select id="code-file-select" data-file-select></select>
+        </div>
+        <div class="dialog-body">
+          <nav class="file-list" aria-label="Project source files" data-file-list></nav>
+          <div class="code-panel">
+            <p class="code-file-name" data-current-file></p>
+            <div class="dialog-feedback">
+              <p class="dialog-status" data-dialog-status role="status" aria-live="polite">Choose a project to view its source.</p>
+              <button class="dialog-retry" type="button" data-load-retry hidden>Retry loading source</button>
+            </div>
+            <pre class="source-code" tabindex="0" data-source-viewport><code data-source-code></code></pre>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="scripts/main.js?v=202610265"></script>
+  </body>
+</html>
